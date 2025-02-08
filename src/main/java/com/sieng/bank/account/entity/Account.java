@@ -6,6 +6,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -20,7 +22,9 @@ public class Account {
  @Id
  @GeneratedValue(strategy = GenerationType.IDENTITY)
  private Long accountNumber;
- private Long customerId; 
+ @ManyToOne
+ @JoinColumn(name = "customerId")
+ private Customer customerId; 
  private String accountType;
  private String branchAddress;
  private LocalDate createDate;
