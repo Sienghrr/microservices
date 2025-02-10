@@ -10,11 +10,9 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-import org.springframework.data.mongodb.core.mapping.Document;
-
 import lombok.Data;
 
-//@Document(collection = "accounts")
+
 @Entity
 @Table(name="accounts")
 @Data

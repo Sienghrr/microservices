@@ -1,7 +1,5 @@
 package com.sieng.bank.account.dto;
 
-import java.time.LocalDate;
-
 import lombok.Data;
 
 @Data

@@ -1,6 +1,5 @@
 package com.sieng.bank.account;
 
-import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest

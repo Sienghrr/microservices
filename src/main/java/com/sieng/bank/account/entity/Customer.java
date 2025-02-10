@@ -8,11 +8,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import org.springframework.data.mongodb.core.mapping.Document;
-
 import lombok.Data;
 
-//@Document(collection = "customers")
+
 @Entity
 @Table(name = "customers")
 @Data
